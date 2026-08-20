@@ -1,0 +1,354 @@
+:root {
+    --ocean-navy: #141c25;
+    --ocean-teal: #098dcf;
+    --ocean-sand: #f0f6fa;
+    --sunset-coral: #ec645e;
+    --ink: #415b78;
+    --line: #d1dbe6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: 5rem;
+}
+
+body {
+    color: var(--ink);
+    font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand,
+.btn,
+.eyebrow,
+.session-label,
+.cohort-label {
+    font-family: Montserrat, sans-serif;
+}
+
+a {
+    color: var(--ocean-teal);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #ffc107;
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 1100;
+    padding: 0.75rem 1rem;
+    background: #fff;
+    color: var(--ocean-navy);
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    transform: translateY(-150%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+.site-nav {
+    background: var(--ocean-navy);
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-brand span {
+    color: #a8e5dc;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #a8e5dc;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.hero {
+    min-height: 420px;
+    display: grid;
+    align-items: end;
+    background: linear-gradient(90deg, rgba(20, 28, 37, 0.9), rgba(20, 28, 37, 0.36)), url("../images/Armstrong_Sunset_Hero2r.jpg") center/cover;
+}
+
+.hero-copy {
+    max-width: 780px;
+    padding: 5.5rem 0 2.75rem;
+    color: #fff;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+.hero-intro {
+    max-width: 650px;
+    font-size: 1.2rem;
+}
+
+.eyebrow,
+.session-label,
+.cohort-label {
+    color: var(--ocean-teal);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.hero .eyebrow {
+    color: #a8e5dc;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--sunset-coral);
+    --bs-btn-border-color: var(--sunset-coral);
+    --bs-btn-hover-bg: #d94840;
+    --bs-btn-hover-border-color: #d94840;
+    --bs-btn-active-bg: #d94840;
+    --bs-btn-active-border-color: #d94840;
+}
+
+.btn-outline-light {
+    border-radius: 0;
+    border-width: 2px;
+}
+
+.btn {
+    border-radius: 0;
+    font-weight: 700;
+    box-shadow: 0 0.25rem 0.75rem rgba(20, 28, 37, 0.15);
+}
+
+section {
+    padding: 5.5rem 0;
+}
+
+.section-heading {
+    color: var(--ocean-navy);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.section-intro {
+    font-size: 1.12rem;
+}
+
+.sand-section {
+    background: var(--ocean-sand);
+}
+
+.learning-section {
+    padding: 4rem 0;
+}
+
+.goal-list {
+    padding-left: 1.25rem;
+}
+
+.goal-list li {
+    margin-bottom: 0.55rem;
+}
+
+.goal-list li::marker {
+    color: var(--sunset-coral);
+}
+
+.session-card,
+.cohort-card,
+.profile-card {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0.5rem 1.5rem rgba(20, 28, 37, 0.1);
+}
+
+.session-card {
+    border-top: 5px solid var(--ocean-teal);
+}
+
+.session-card .card-body {
+    position: relative;
+    min-height: 285px;
+    padding: 1.5rem;
+}
+
+.session-icon {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    color: var(--ocean-teal);
+    font-size: 1.75rem;
+    --fa-primary-color: var(--ocean-teal);
+    --fa-primary-opacity: 0.9;
+    --fa-secondary-color: #9dd1ec;
+    --fa-secondary-opacity: 0.75;
+}
+
+.session-card h3,
+.cohort-card h3 {
+    color: var(--ocean-navy);
+    font-size: 1.35rem;
+}
+
+.cohort-card {
+    border-top: 6px solid var(--sunset-coral);
+}
+
+.resource-panel {
+    background: var(--ocean-navy);
+    color: #fff;
+}
+
+.resource-panel h2 {
+    color: #fff;
+}
+
+.resource-panel .eyebrow {
+    color: #a8e5dc;
+}
+
+.accordion {
+    --bs-accordion-border-color: var(--line);
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: #e6f1ef;
+    --bs-accordion-active-color: var(--ocean-navy);
+}
+
+.accordion-button {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+.profile-photo-placeholder {
+    display: grid;
+    aspect-ratio: 1 / 1;
+    place-items: center;
+    background: linear-gradient(135deg, #d9edf8, #b8d8e8);
+    color: var(--ocean-navy);
+    font-family: Montserrat, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.profile-card .card-body {
+    padding: 1.25rem;
+}
+
+.profile-card h3 {
+    color: var(--ocean-navy);
+    font-size: 1.12rem;
+}
+
+.partner-logo-card {
+    display: grid;
+    grid-template-rows: 112px auto;
+    height: 100%;
+    text-align: center;
+}
+
+.partner-logo-slot {
+    display: grid;
+    place-items: center;
+    padding: 1.25rem;
+    background: #fff;
+}
+
+.partner-logo-slot img {
+    max-width: 100%;
+    max-height: 72px;
+    width: auto;
+    height: auto;
+}
+
+.partner-name {
+    color: var(--ocean-navy);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.footer {
+    background: var(--ocean-navy);
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.footer a {
+    color: #a8e5dc;
+}
+
+.registration-panel {
+    background: var(--sunset-coral);
+    color: #fff;
+}
+
+.registration-panel h2 {
+    color: #fff;
+}
+
+.registration-panel .btn {
+    color: var(--ocean-navy);
+}
+
+@media (max-width: 991px) {
+    .hero {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        min-height: 390px;
+    }
+
+    .hero-copy {
+        padding: 5rem 0 2.25rem;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
