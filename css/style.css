@@ -257,6 +257,15 @@ section {
     font-weight: 700;
 }
 
+.profile-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    background: linear-gradient(135deg, #d9edf8, #b8d8e8);
+}
+
 .profile-photo-placeholder {
     display: grid;
     aspect-ratio: 1 / 1;
@@ -266,6 +275,10 @@ section {
     font-family: Montserrat, sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
+}
+
+.profile-card {
+    overflow: hidden;
 }
 
 .profile-card .card-body {
