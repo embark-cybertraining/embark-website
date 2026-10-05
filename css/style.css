@@ -1,6 +1,6 @@
 :root {
     --ocean-navy: #141c25;
-    --ocean-teal: #098dcf;
+    --ocean-teal: #0775AB; //#098dcf;
     --ocean-sand: #f0f6fa;
     --sunset-coral: #ec645e;
     --ink: #415b78;
@@ -329,7 +329,7 @@ section {
 
 .registration-panel {
     background: var(--sunset-coral);
-    color: #fff;
+    color: #262626;
 }
 
 .registration-panel h2 {
